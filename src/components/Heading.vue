@@ -9,6 +9,6 @@ defineProps<{
   <h2
     :id="id"
     class="border-b mb-12 py-4 text-3xl font-semibold tracking-tight transition-colors first:mt-0 text-center">
-    {{ text }}
+    {{ $t(`headings.${text}`) }}
   </h2>
 </template>

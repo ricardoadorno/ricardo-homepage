@@ -27,9 +27,9 @@ defineProps<{
           class="relative after:hidden after:absolute after:left-0 after:w-full after:h-full after:bg-cyan-400 after:z-[-1] after:blur-[50px] hover:after:block">
           <a
             class="hover:before:w-full hover:before:left-0 before:absolute before:bottom-[-0.3rem] before:left-1/2 before:w-0 before:h-[2px] before:bg-primary before:transition-width before:duration-300 before:ease-in-out before:transition-left"
-            :href="item.link"
-            >{{ item.name }}</a
-          >
+            :href="item.link">
+            {{ $t(`header.navItems.${item.name}`) }}
+          </a>
         </li>
       </ul>
     </div>
@@ -41,11 +41,7 @@ defineProps<{
         <Icon icon="radix-icons:github-logo" class="w-8 h-8" />
       </a>
       <a
-        :href="
-          $i18n.locale === 'en'
-            ? 'https://www.linkedin.com/in/ricardo-adorno/?locale=en_US'
-            : 'https://www.linkedin.com/in/ricardo-adorno'
-        "
+        :href="$t('socials.linkedin')"
         target="_blank"
         rel="noopener noreferrer">
         <Icon icon="radix-icons:linkedin-logo" class="w-8 h-8" />

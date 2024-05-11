@@ -3,46 +3,55 @@ import TechCard from '../TechCard.vue';
 
 const TECH_ITEMS = [
   {
-    name: 'Vue 3',
-    description: 'The Progressive JavaScript Framework',
-    icon: 'radix-icons:github-logo',
+    name: 'javascript',
+    icon: 'skill-icons:typescript',
   },
   {
-    name: 'Vite',
-    description: 'Next Generation Frontend Tooling',
-    icon: 'radix-icons:github-logo',
+    name: 'react',
+    icon: 'skill-icons:react-dark',
   },
   {
-    name: 'Tailwind CSS',
-    description: 'A utility-first CSS framework',
-    icon: 'radix-icons:github-logo',
+    name: 'vue',
+    icon: 'skill-icons:vuejs-dark',
   },
   {
-    name: 'Vue 3',
-    description: 'The Progressive JavaScript Framework',
-    icon: 'radix-icons:github-logo',
+    name: 'tailwind',
+    icon: 'skill-icons:tailwindcss-dark',
   },
   {
-    name: 'Vite',
-    description: 'Next Generation Frontend Tooling',
-    icon: 'radix-icons:github-logo',
+    name: 'figma',
+    icon: 'skill-icons:figma-dark',
   },
   {
-    name: 'Tailwind CSS',
-    description: 'A utility-first CSS framework',
-    icon: 'radix-icons:github-logo',
+    name: 'node',
+    icon: 'skill-icons:nodejs-dark',
+  },
+  {
+    name: 'nest',
+    icon: 'skill-icons:nestjs-dark',
+  },
+  {
+    name: 'docker',
+    icon: 'skill-icons:docker',
+  },
+  {
+    name: 'test',
+    icon: 'skill-icons:jest',
+  },
+  {
+    name: 'sql',
+    icon: 'skill-icons:postgresql-dark',
   },
 ];
 </script>
 
 <template>
-  <div class="grid grid-cols-1 gap-8 my-8 md:grid-cols-3 md:gap-16">
+  <div class="grid grid-cols-1 gap-8 my-8 md:grid-cols-5 md:gap-8">
     <TechCard
       v-motion-pop-visible-once
       v-for="tech in TECH_ITEMS"
       :key="tech.name"
       :name="tech.name"
-      :description="tech.description"
       :icon="tech.icon" />
   </div>
 </template>

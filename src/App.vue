@@ -12,19 +12,19 @@ import AboutSection from './components/sections/AboutSection.vue';
 
 const HEADER_ITEMS = [
   {
-    name: 'Technologies',
+    name: 'technologies',
     link: '#technologies',
   },
   {
-    name: 'Projects',
+    name: 'projects',
     link: '#projects',
   },
   {
-    name: 'About Me',
+    name: 'about',
     link: '#about',
   },
   {
-    name: 'Contact',
+    name: 'contact',
     link: '#contact',
   },
 ];
@@ -32,19 +32,19 @@ const HEADER_ITEMS = [
 const HEADINGS = {
   technologies: {
     id: 'technologies',
-    text: 'Technologies',
+    text: 'technologies',
   },
   projects: {
     id: 'projects',
-    text: 'Projects',
+    text: 'projects',
   },
   about: {
     id: 'about',
-    text: 'About Me',
+    text: 'about',
   },
   contact: {
     id: 'contact',
-    text: 'Contact',
+    text: 'contact',
   },
 };
 
@@ -57,7 +57,6 @@ const handleChange = () => {
 
 <template>
   <ThemeSwitch :mode="mode" @update:mode="handleChange" />
-
   <main class="container mx-auto px-10 md:px-20">
     <LayoutHeader :items="HEADER_ITEMS" />
     <HeroSection />

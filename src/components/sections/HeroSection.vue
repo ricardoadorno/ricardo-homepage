@@ -14,13 +14,16 @@ import { Button } from '../ui/button';
       </h1>
 
       <p class="leading-7 [&:not(:first-child)]:mt-6">
-        Passionate developer, looking for new challenges and opportunities to
-        learn and improve my skills.
+        {{ $t('hero.lead') }}
       </p>
 
       <div class="flex gap-x-4 justify-center md:justify-start">
-        <Button> My Projects </Button>
-        <Button variant="outline"> Get in touch </Button>
+        <Button>
+          <a href="#projects">{{ $t('hero.buttonPrimary') }}</a>
+        </Button>
+        <Button variant="outline">
+          <a href="#contact">{{ $t('hero.buttonSecondary') }}</a>
+        </Button>
       </div>
     </div>
     <div v-motion-fade-visible-once>
