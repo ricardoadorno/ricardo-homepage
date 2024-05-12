@@ -14,10 +14,10 @@
 
 [X] - Animations
 
+[X] - Link Projects
+
+[X] - Images Otimization
+
+[ ] - Select Bug
+
 [ ] - Form Submission
-
-[ ] - Images Otimization
-
-[ ] - Layout Bug
-
-[ ] - Technologies Writing and layout fix

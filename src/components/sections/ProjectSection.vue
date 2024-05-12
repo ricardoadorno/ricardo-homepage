@@ -1,15 +1,13 @@
 <script setup lang="ts">
 import ProjectCard from '../ProjectCard.vue';
+import spotify_rest from '@/assets/images/spotify_rest.png';
 
 const PROJECT_ITEMS = [
   {
     name: 'spotifyApi',
-    link: '#',
-  },
-  {
-    name: 'realtimeChat',
-    link: '#',
-    inverted: true,
+    image: spotify_rest,
+    link: 'https://vue-spotify-rest-2.vercel.app',
+    inverted: false,
   },
 ];
 </script>
@@ -21,6 +19,7 @@ const PROJECT_ITEMS = [
       v-for="project in PROJECT_ITEMS"
       :key="project.name"
       :name="project.name"
+      :image="project.image"
       :link="project.link"
       :inverted="project.inverted" />
   </div>

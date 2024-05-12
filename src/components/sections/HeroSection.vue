@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { Button } from '../ui/button';
+import me from '@/assets/images/me.jpg';
 </script>
 
 <template>
@@ -27,7 +28,12 @@ import { Button } from '../ui/button';
       </div>
     </div>
     <div v-motion-fade-visible-once>
-      <img src="https://placehold.it/500x500" alt="profile" />
+      <img
+        :src="me"
+        alt="ricardo"
+        width="450"
+        height="450"
+        class="rounded-lg" />
     </div>
   </div>
 </template>

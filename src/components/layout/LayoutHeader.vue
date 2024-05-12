@@ -46,21 +46,24 @@ defineProps<{
         rel="noopener noreferrer">
         <Icon icon="radix-icons:linkedin-logo" class="w-8 h-8" />
       </a>
-      <Select v-model="$i18n.locale">
-        <SelectTrigger>
-          <SelectValue />
-        </SelectTrigger>
-        <SelectContent>
-          <SelectGroup>
-            <SelectItem
-              v-for="locale in $i18n.availableLocales"
-              :key="`locale-${locale}`"
-              :value="locale"
-              >{{ $t(`header.locale.${locale}`) }}
-            </SelectItem>
-          </SelectGroup>
-        </SelectContent>
-      </Select>
+
+      <div>
+        <Select v-model="$i18n.locale">
+          <SelectTrigger class="max-w-36">
+            <SelectValue />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectGroup>
+              <SelectItem
+                v-for="locale in $i18n.availableLocales"
+                :key="`locale-${locale}`"
+                :value="locale"
+                >{{ $t(`header.locale.${locale}`) }}
+              </SelectItem>
+            </SelectGroup>
+          </SelectContent>
+        </Select>
+      </div>
     </div>
   </div>
 </template>

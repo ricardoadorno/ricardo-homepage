@@ -4,6 +4,7 @@ import Button from './ui/button/Button.vue';
 defineProps<{
   name: string;
   link: string;
+  image: string;
   inverted?: boolean;
 }>();
 </script>
@@ -24,12 +25,17 @@ defineProps<{
       <p class="leading-7 [&:not(:first-child)]:mt-6">
         {{ $t(`projects.items.${name}.lead`) }}
       </p>
-      <Button class="mt-3 text-lg w-1/2" :href="link" target="_blank">
+      <Button class="mt-3 text-lg w-1/2" :href="link" as="a" target="_blank">
         {{ $t('projects.ctaButton') }}
       </Button>
     </div>
     <div>
-      <img src="https://placehold.it/600x300" alt="avatar" />
+      <img
+        :alt="name"
+        :src="image"
+        width="600"
+        height="300"
+        class="rounded-lg" />
     </div>
   </div>
 </template>

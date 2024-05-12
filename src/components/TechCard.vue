@@ -14,8 +14,8 @@ defineProps<{
     <h4 class="scroll-m-20 text-lg font-semibold tracking-tight mb-2">
       {{ $t(`technologies.items.${name}.title`) }}
     </h4>
-    <p class="text-md text-muted-foreground">
+    <!-- <p class="text-md text-muted-foreground">
       {{ $t(`technologies.items.${name}.description`) }}
-    </p>
+    </p> -->
   </div>
 </template>

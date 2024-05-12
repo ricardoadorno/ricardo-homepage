@@ -38,36 +38,26 @@ const i18n = createI18n({
           },
           javascript: {
             title: 'Typescript',
-            description: 'Programming language for web development',
           },
           react: {
             title: 'React',
-            description: 'JavaScript library for building user interfaces',
           },
           vue: {
             title: 'Vue',
-            description:
-              'Progressive JavaScript framework for building user interfaces',
           },
           node: {
             title: 'Node.js',
-            description:
-              "JavaScript runtime built on Chrome's V8 JavaScript engine",
           },
 
           nest: {
             title: 'Nest',
-            description:
-              'A progressive Node.js framework for building efficient, reliable and scalable server-side applications',
           },
           sql: {
-            title: 'SQL',
-            description: 'Structured Query Language for relational databases',
+            title: 'PostgreSQL',
           },
 
           test: {
-            title: 'Test',
-            description: 'Test',
+            title: 'Jest',
           },
 
           docker: {
@@ -163,58 +153,41 @@ const i18n = createI18n({
           },
           javascript: {
             title: 'Typescript',
-            description: 'Linguagem de programação para desenvolvimento web',
           },
           react: {
             title: 'React',
-            description:
-              'Biblioteca JavaScript para construção de interfaces de usuário',
           },
           vue: {
             title: 'Vue',
-            description:
-              'Framework JavaScript progressivo para construção de interfaces de usuário',
+          },
+          tailwind: {
+            title: 'Tailwind',
           },
           node: {
             title: 'Node.js',
-            description:
-              'Ambiente de execução JavaScript construído no motor JavaScript V8 do Chrome',
           },
 
           nest: {
             title: 'Nest',
-            description:
-              'Framework Node.js progressivo para construir aplicativos do lado do servidor eficientes, confiáveis e escaláveis',
           },
           sql: {
-            title: 'SQL',
-            description:
-              'Linguagem de consulta estruturada para bancos de dados relacionais',
+            title: 'PostgreSQL',
           },
 
           test: {
-            title: 'Teste',
-            description: 'Teste',
+            title: 'Jest',
           },
 
           docker: {
             title: 'Docker',
-            description: 'Docker',
           },
 
           git: {
             title: 'Git',
-            description: 'Git',
-          },
-
-          tailwind: {
-            title: 'Tailwind',
-            description: 'Tailwind',
           },
 
           figma: {
             title: 'Figma',
-            description: 'Ferramenta de prototipagem online',
           },
         },
       },

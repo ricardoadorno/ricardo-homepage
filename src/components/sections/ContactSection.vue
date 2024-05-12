@@ -39,7 +39,10 @@ const SOCIALS_LINKS = [
     </form> -->
 
     <div>
-      <img src="https://via.placeholder.com/300" alt="contact" />
+      <Icon
+        icon="line-md:phone-call-twotone-loop"
+        class="w-48 h-48"
+        color="#00bfa5" />
     </div>
 
     <div
@@ -59,10 +62,7 @@ const SOCIALS_LINKS = [
           :href="$t(`socials.${social.link}`)"
           target="_blank"
           class="flex items-center gap-1">
-          <Icon
-            :icon="social.icon"
-            class="mr-2 flex place-items-center t"
-            size="24px" />
+          <Icon :icon="social.icon" class="mr-2 flex place-items-center" />
           {{ social.name }}
         </a>
       </div>

@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import me from '@/assets/images/me_relaxed.jpg';
+</script>
 
 <template>
   <div
@@ -22,9 +24,11 @@
 
     <div class="p-5" v-motion-slide-visible-once-right>
       <img
-        src="https://placehold.it/450x450"
-        class="rounded-full"
-        alt="avatar" />
+        :src="me"
+        class="rounded-2xl"
+        alt="ricardo_relaxed"
+        width="450"
+        height="450" />
     </div>
   </div>
 </template>
